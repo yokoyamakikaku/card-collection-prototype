@@ -15,10 +15,10 @@ export default function HomePage () {
         </div>
         <div className="flex max-w-2xl gap-4 mx-auto mb-12">
           <div className="w-full">
-            <img className="w-full h-auto block" src="/read.webp" alt="" />
+            <img className="w-full h-auto block" src="/images/read.webp" alt="" />
           </div>
           <div className="w-full">
-            <img className="h-auto flex-grow flex-shrink-0" src="/talk.webp" alt="" />
+            <img className="h-auto flex-grow flex-shrink-0" src="/images/talk.webp" alt="" />
           </div>
         </div>
         <div className="max-w-4xl px-8 flex flex-col gap-4 mx-auto">
