@@ -4,6 +4,7 @@ import { BiChevronRight } from "react-icons/bi"
 import { CardModel } from "../types"
 import QrCode from "./QrCode"
 import { DialogProps } from "../hooks/ui"
+import { createShareUrl } from "../services/model/card"
 
 export default function CardDialog ({
   data: card,
@@ -13,10 +14,8 @@ export default function CardDialog ({
   const [qrOpened, setQrOpened] = useState<boolean>(false)
 
   const shareUrl = useMemo(() => {
-    if (!card) return
-    const url = new URL(window.location.href)
-    url.searchParams.set("key", card.key)
-    return url.toString()
+    if (!card) return null
+    return createShareUrl(card).toString()
   }, [card])
 
   useEffect(() => {
