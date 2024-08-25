@@ -21,6 +21,11 @@ export default function Layout() {
         </div>
       </div>
       <Outlet />
+      <footer className="py-32 ">
+        <p className="text-center">
+          開発: <a className="text-blue-800 underline" href="https://yokoyamakikaku.work">横山企画</a>
+        </p>
+      </footer>
     </div>
   )
 }

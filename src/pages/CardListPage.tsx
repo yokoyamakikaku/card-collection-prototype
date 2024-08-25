@@ -78,8 +78,7 @@ export default function CardListPage () {
           </div>
         )}
       </div>
-      <CardDialog
-        {...dialog} />
+      <CardDialog {...dialog} />
     </div>
   )
 }
